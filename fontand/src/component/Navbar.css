@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Brand Name */
+.brand-name {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  color: #ff5722;
+}
+
+/* General nav-link */
+.nav-link {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+/* Default: disable hover on all nav links */
+.navbar .nav-link:hover {
+  color: inherit !important;
+  border-bottom: none !important;
+}
+
+/* Enable hover ONLY on home page */
+.home-navbar .nav-link:hover {
+  color: #e53935 !important;
+}
+
+/* Transparent navbar */
+.navbar-transparent {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
+}
+
+/* Colored navbar */
+.navbar-colored {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Nav link color in transparent navbar */
+.navbar-transparent .navbar-nav .nav-link {
+  color: white !important;
+}
+
+/* Nav link color in colored navbar (default) */
+.navbar-colored .navbar-nav .nav-link {
+  color: #333 !important;
+}
+
+/* Active nav-link */
+.navbar-nav .nav-link.active {
+  color: #ff5722 !important;
+  font-weight: 700;
+  border-bottom: 2px solid #ff5722;
+}
+
+/* Active link hover (only on home) */
+.home-navbar .navbar-nav .nav-link.active:hover {
+  color: #e53935 !important;
+  border-bottom-color: #e53935;
+}
+
+/* Center menu on large screens */
+@media (min-width: 992px) {
+  .navbar-nav.mx-auto {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Mobile specific styles */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+  }
+
+  .navbar-collapse .nav-link {
+    color: #333 !important;
+    font-size: 1.1rem;
+  }
+
+  /* Mobile: disable hover unless on home */
+  .navbar-collapse .nav-link:hover {
+    color: inherit !important;
+  }
+
+  .home-navbar .navbar-collapse .nav-link:hover {
+    color: #e53935 !important;
+  }
+}
+
+/* ==========================
+   Disable hover effects on Cart Page
+   ========================== */
+.cart-page .nav-link:hover {
+  color: inherit !important;
+  border-bottom: none !important;
+  transform: none !important;
+  cursor: default !important;
+}
+
+.cart-page .navbar-nav .nav-link.active:hover {
+  color: #ff5722 !important;
+  border-bottom-color: #ff5722 !important;
+}
+.cart-badge {
+  font-size: 0.65rem;
+  min-width: 1.1rem;
+  height: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  color: white;
+}

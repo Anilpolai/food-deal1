@@ -1,0 +1,63 @@
+#explore-menu h1 {
+  font-weight: 600;
+  color: #333;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  transition: border 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+/* Active category image border */
+.menu-img.active {
+  border: 3px solid tomato;
+}
+
+.menu-name {
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.menu-item:hover .menu-name {
+  color: tomato;
+}
+
+/* Special styling for 'All Food' */
+.menu-img.all-category {
+  background: #ffe5e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.menu-img.all-category.active {
+  border: 3px solid tomato;
+  background-color: #ffd5cc;
+}
+
+.all-text {
+  color: #333;
+}

@@ -1,0 +1,97 @@
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+.service-box {
+  border: 2px solid #ffc107;
+  padding: 20px;
+  border-radius: 12px;
+  transition: background-position 0.4s ease, color 0.4s ease;
+  background: linear-gradient(to left, #fff 50%, #ffc107 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  cursor: pointer;
+  color: #333;
+}
+
+.service-box:hover {
+  background-position: left bottom;
+  color: #fff;
+}
+
+.service-box i {
+  color: #ffc107;
+  transition: color 0.3s ease;
+}
+
+.service-box:hover i {
+  color: #fff;
+}
+
+.service-box p {
+  font-weight: 500;
+}
+
+
+
+
+#mobile-app h1 {
+  font-weight: 600;
+  color: #222;
+}
+
+.store-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  border: 2px solid #333;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.google-play {
+  background-color: #0f9d58;
+  color: #fff;
+  border-color: #0f9d58;
+}
+
+.app-store {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.store-button:hover {
+  opacity: 0.85;
+  transform: scale(1.03);
+}
+
+.feature-card {
+  background-color: #f9f9f9;
+  padding: 25px 15px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.feature-card:hover {
+  background-color: #ffe5e0;
+  transform: translateY(-5px);
+}
+
+.feature-card h4 {
+  color: #333;
+  font-weight: 600;
+}
+
+.feature-card p {
+  color: #666;
+}

@@ -1,0 +1,11 @@
+.food-display {
+  background-color: #fdfdfd;
+  overflow-x: hidden; /* Prevent side scroll on mobile */
+}
+
+@media (max-width: 576px) {
+  .food-display {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
