@@ -2,9 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import NavigationBar from '../component/NavigationBar';
 import Footer from '../component/footer';
-<style>
-    
-</style>
+
 const NotFound = () => {
   return (
     <div className="d-flex flex-column min-vh-100">
