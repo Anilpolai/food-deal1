@@ -1,6 +1,6 @@
 import React from 'react';
 import NavigationBar from '../../component/NavigationBar';
-import Footer from '../../component/Footer';
+import Footer from '../../component/footer';
 import { Outlet } from 'react-router-dom';
 
 const Layout = ({ setShowLogin }) => {
