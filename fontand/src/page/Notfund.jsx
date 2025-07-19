@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NavigationBar from '../component/NavigationBar';
-import Footer from '../component/Footer';
+import Footer from '../component/footer';
 <style>
     
 </style>
